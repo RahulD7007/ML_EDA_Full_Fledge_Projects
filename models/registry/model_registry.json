@@ -1,7 +1,7 @@
 {
   "models": {
     "logistic_regression": {
-      "champion": "v4",
+      "champion": "v6",
       "versions": {
         "v1": {
           "version": "v1",
@@ -78,11 +78,49 @@
           "pr_auc": 0.7712,
           "accuracy": 0.8305,
           "f1_score": 0.6565
+        },
+        "v5": {
+          "version": "v5",
+          "model_name": "logistic_regression",
+          "artifact": "logistic_regression/logistic_regression_v5.joblib",
+          "trained_at": "2026-09-20T11:31:34",
+          "n_train": 118936,
+          "n_test": 29734,
+          "params": {
+            "max_iter": 1000,
+            "class_weight": "balanced",
+            "random_state": 42,
+            "solver": "lbfgs",
+            "C": 0.1
+          },
+          "roc_auc": 0.8459,
+          "pr_auc": 0.7712,
+          "accuracy": 0.8305,
+          "f1_score": 0.6565
+        },
+        "v6": {
+          "version": "v6",
+          "model_name": "logistic_regression",
+          "artifact": "logistic_regression/logistic_regression_v6.joblib",
+          "trained_at": "2026-09-20T11:34:45",
+          "n_train": 118936,
+          "n_test": 29734,
+          "params": {
+            "max_iter": 1000,
+            "class_weight": "balanced",
+            "random_state": 42,
+            "solver": "lbfgs",
+            "C": 0.1
+          },
+          "roc_auc": 0.8459,
+          "pr_auc": 0.7712,
+          "accuracy": 0.8305,
+          "f1_score": 0.6565
         }
       }
     },
     "random_forest": {
-      "champion": "v4",
+      "champion": "v6",
       "versions": {
         "v1": {
           "version": "v1",
@@ -167,11 +205,53 @@
           "pr_auc": 0.8284,
           "accuracy": 0.8727,
           "f1_score": 0.7291
+        },
+        "v5": {
+          "version": "v5",
+          "model_name": "random_forest",
+          "artifact": "random_forest/random_forest_v5.joblib",
+          "trained_at": "2026-09-20T11:31:46",
+          "n_train": 118936,
+          "n_test": 29734,
+          "params": {
+            "n_estimators": 300,
+            "max_depth": 12,
+            "min_samples_leaf": 20,
+            "max_features": "sqrt",
+            "class_weight": "balanced",
+            "random_state": 42,
+            "n_jobs": -1
+          },
+          "roc_auc": 0.8863,
+          "pr_auc": 0.8284,
+          "accuracy": 0.8727,
+          "f1_score": 0.7291
+        },
+        "v6": {
+          "version": "v6",
+          "model_name": "random_forest",
+          "artifact": "random_forest/random_forest_v6.joblib",
+          "trained_at": "2026-09-20T11:34:58",
+          "n_train": 118936,
+          "n_test": 29734,
+          "params": {
+            "n_estimators": 300,
+            "max_depth": 12,
+            "min_samples_leaf": 20,
+            "max_features": "sqrt",
+            "class_weight": "balanced",
+            "random_state": 42,
+            "n_jobs": -1
+          },
+          "roc_auc": 0.8863,
+          "pr_auc": 0.8284,
+          "accuracy": 0.8727,
+          "f1_score": 0.7291
         }
       }
     },
     "xgboost": {
-      "champion": "v4",
+      "champion": "v6",
       "versions": {
         "v1": {
           "version": "v1",
@@ -253,6 +333,56 @@
           "model_name": "xgboost",
           "artifact": "xgboost/xgboost_v4.joblib",
           "trained_at": "2026-08-14T21:20:14",
+          "n_train": 118936,
+          "n_test": 29734,
+          "params": {
+            "n_estimators": 400,
+            "max_depth": 6,
+            "learning_rate": 0.05,
+            "subsample": 0.8,
+            "colsample_bytree": 0.8,
+            "min_child_weight": 10,
+            "scale_pos_weight": 3,
+            "eval_metric": "auc",
+            "random_state": 42,
+            "n_jobs": -1,
+            "tree_method": "hist"
+          },
+          "roc_auc": 0.8953,
+          "pr_auc": 0.8459,
+          "accuracy": 0.8803,
+          "f1_score": 0.7492
+        },
+        "v5": {
+          "version": "v5",
+          "model_name": "xgboost",
+          "artifact": "xgboost/xgboost_v5.joblib",
+          "trained_at": "2026-09-20T11:31:55",
+          "n_train": 118936,
+          "n_test": 29734,
+          "params": {
+            "n_estimators": 400,
+            "max_depth": 6,
+            "learning_rate": 0.05,
+            "subsample": 0.8,
+            "colsample_bytree": 0.8,
+            "min_child_weight": 10,
+            "scale_pos_weight": 3,
+            "eval_metric": "auc",
+            "random_state": 42,
+            "n_jobs": -1,
+            "tree_method": "hist"
+          },
+          "roc_auc": 0.8953,
+          "pr_auc": 0.8459,
+          "accuracy": 0.8803,
+          "f1_score": 0.7492
+        },
+        "v6": {
+          "version": "v6",
+          "model_name": "xgboost",
+          "artifact": "xgboost/xgboost_v6.joblib",
+          "trained_at": "2026-09-20T11:35:06",
           "n_train": 118936,
           "n_test": 29734,
           "params": {
